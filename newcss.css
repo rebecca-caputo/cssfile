@@ -1,0 +1,95 @@
+/* Base color variables */
+:root {
+  --primary-dark: #0047AB; /* Dark blue */
+  --primary-light: #3399FF; /* Light blue */
+  --background: #f0f4ff; /* Light bluish background */
+  --text-color: #001f4d; /* Dark blue text */
+  --border-radius: 8px;
+}
+
+/* General body style */
+body {
+  font-family: var(--fontFamily, Arial, sans-serif);
+  background-color: var(--background);
+  color: var(--text-color);
+}
+
+/* Application form */
+.ashby-application-form-container,
+.ashby-application-form-blocked-application-container,
+.ashby-application-form-success-container,
+.ashby-application-form-failure-container {
+  background-color: #e6f0ff;
+  padding: 15px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--primary-light);
+  margin-bottom: 15px;
+}
+
+/* Form fields */
+.ashby-application-form-field-entry,
+.ashby-application-form-autofill-input-base-layer,
+.ashby-application-form-autofill-uploader {
+  border: 1px solid var(--primary-light);
+  border-radius: var(--border-radius);
+  padding: 8px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  color: var(--text-color);
+}
+
+/* Labels and titles */
+.ashby-application-form-question-title,
+.ashby-application-form-section-header-title,
+.ashby-application-form-section-header-description,
+.ashby-job-board-heading,
+.ashby-job-posting-heading,
+.ashby-department-heading,
+.ashby-department-heading-level {
+  color: var(--primary-dark);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Descriptions */
+.ashby-application-form-question-description,
+.ashby-application-form-texting-consent-description {
+  color: var(--primary-dark);
+  font-size: 0.9em;
+}
+
+/* Buttons */
+.ashby-application-form-submit-button,
+.ashby-job-board-back-to-all-jobs-button {
+  background-color: var(--primary-dark);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.ashby-application-form-submit-button:hover,
+.ashby-job-board-back-to-all-jobs-button:hover {
+  background-color: var(--primary-light);
+}
+
+/* Job posting briefs */
+.ashby-job-posting-brief,
+.ashby-job-posting-brief-list,
+.ashby-job-posting-brief-details {
+  background-color: #e6f0ff;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  margin-bottom: 10px;
+}
+
+/* Tabs and overview */
+.ashby-job-posting-right-pane-tab-slider,
+.ashby-job-posting-right-pane-overview-tab,
+.ashby-job-posting-right-pane-application-tab {
+  border-bottom: 2px solid var(--primary-dark);
+  padding: 5px 0;
+  color: var(--primary-dark);
+}
